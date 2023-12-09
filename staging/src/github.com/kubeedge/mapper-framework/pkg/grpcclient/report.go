@@ -8,7 +8,7 @@ import (
 
 	"google.golang.org/grpc"
 
-	dmiapi "github.com/kubeedge/Template/pkg/dmi-api"
+	dmiapi "github.com/kubeedge/kubeedge/pkg/apis/dmi/v1beta1"
 )
 
 // ReportDeviceStatus report device status to edgecore

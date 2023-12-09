@@ -49,7 +49,7 @@ function check_prerequisites {
 # spin up cluster with kind command
 function kind_up_cluster {
   echo "Running kind: [kind create cluster ${CLUSTER_CONTEXT}]"
-  kind create cluster ${CLUSTER_CONTEXT} --image ${KIND_IMAGE}
+  kind create cluster ${CLUSTER_CONTEXT}
 }
 
 function uninstall_kubeedge {

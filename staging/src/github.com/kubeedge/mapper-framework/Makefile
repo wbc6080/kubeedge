@@ -13,5 +13,7 @@ help:
 	@echo
 
 make_rules := $(shell ls $(curr_dir)/hack/make-rules | sed 's/.sh//g')
+
 $(make_rules):
+
 	@$(curr_dir)/hack/make-rules/$@.sh $(rest_args)

@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc"
 
 	"github.com/kubeedge/Template/pkg/common"
-	dmiapi "github.com/kubeedge/Template/pkg/dmi-api"
+	dmiapi "github.com/kubeedge/kubeedge/pkg/apis/dmi/v1beta1"
 )
 
 // RegisterMapper if withData is true, edgecore will send device and model list.
