@@ -51,7 +51,7 @@ func (s *Server) RegisterDevice(ctx context.Context, request *dmiapi.RegisterDev
 	}
 
 	deviceInstance.PProtocol = protocol
-	s.devPanel.UpdateDev(&model, deviceInstance, &protocol)
+	s.devPanel.UpdateDev(&model, deviceInstance)
 
 	return &dmiapi.RegisterDeviceResponse{DeviceName: device.Name}, nil
 }
@@ -87,7 +87,7 @@ func (s *Server) UpdateDevice(ctx context.Context, request *dmiapi.UpdateDeviceR
 	}
 	deviceInstance.PProtocol = protocol
 
-	s.devPanel.UpdateDev(&model, deviceInstance, &protocol)
+	s.devPanel.UpdateDev(&model, deviceInstance)
 
 	return &dmiapi.UpdateDeviceResponse{}, nil
 }
