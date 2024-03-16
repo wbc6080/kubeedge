@@ -7,7 +7,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/informers"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/edgecontroller/controller"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 // EdgeController use beehive context message layer

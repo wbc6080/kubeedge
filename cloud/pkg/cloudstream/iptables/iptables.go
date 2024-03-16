@@ -22,7 +22,7 @@ import (
 
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/common/constants"
-	cloudcoreConfig "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
+	cloudcoreConfig "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 type Manager struct {

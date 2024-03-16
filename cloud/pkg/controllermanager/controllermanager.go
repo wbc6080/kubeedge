@@ -17,7 +17,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/controllermanager/edgeapplication/overridemanager"
 	"github.com/kubeedge/kubeedge/cloud/pkg/controllermanager/edgeapplication/statusmanager"
 	"github.com/kubeedge/kubeedge/cloud/pkg/controllermanager/nodegroup"
-	appsv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/apps/v1alpha1"
+	appsv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/apps/v1alpha1"
 )
 
 var appsScheme = runtime.NewScheme()

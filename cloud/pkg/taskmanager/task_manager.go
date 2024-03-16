@@ -30,7 +30,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/nodeupgradecontroller"
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util"
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util/controller"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 type TaskManager struct {

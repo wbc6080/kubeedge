@@ -14,7 +14,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/router/listener"
 	"github.com/kubeedge/kubeedge/cloud/pkg/router/provider"
 	"github.com/kubeedge/kubeedge/edge/pkg/common/message"
-	v1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
+	v1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 )
 
 const (

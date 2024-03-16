@@ -41,9 +41,9 @@ import (
 	"github.com/kubeedge/kubeedge/edge/pkg/devicetwin/dmiclient"
 	"github.com/kubeedge/kubeedge/edge/pkg/devicetwin/dtcommon"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
-	"github.com/kubeedge/kubeedge/pkg/apis/devices/v1beta1"
-	pb "github.com/kubeedge/kubeedge/pkg/apis/dmi/v1beta1"
 	"github.com/kubeedge/kubeedge/pkg/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/devices/v1beta1"
+	pb "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/dmi/v1beta1"
 )
 
 const (

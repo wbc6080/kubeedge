@@ -15,7 +15,7 @@ import (
 
 	"github.com/kubeedge/beehive/pkg/core/model"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
-	policyv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/policy/v1alpha1"
+	policyv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/policy/v1alpha1"
 )
 
 const (

@@ -58,10 +58,10 @@ import (
 	routerrule "github.com/kubeedge/kubeedge/cloud/pkg/router/rule"
 	common "github.com/kubeedge/kubeedge/common/constants"
 	edgeapi "github.com/kubeedge/kubeedge/common/types"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
-	rulesv1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
 	crdClientset "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
 	"github.com/kubeedge/kubeedge/pkg/metaserver/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
+	rulesv1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 )
 
 // SortedContainerStatuses define A type to help sort container statuses based on container names.

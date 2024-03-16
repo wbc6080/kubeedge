@@ -28,7 +28,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util"
 	commontypes "github.com/kubeedge/kubeedge/common/types"
-	api "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
+	api "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
 )
 
 const (

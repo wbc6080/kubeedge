@@ -36,9 +36,9 @@ import (
 	edgeconst "github.com/kubeedge/kubeedge/cloud/pkg/edgecontroller/constants"
 	"github.com/kubeedge/kubeedge/cloud/pkg/synccontroller"
 	v2 "github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao/v2"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	reliableclient "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
 	"github.com/kubeedge/kubeedge/pkg/metaserver/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 	"github.com/kubeedge/viaduct/pkg/conn"
 )
 

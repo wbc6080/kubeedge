@@ -19,8 +19,8 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	edgectrconst "github.com/kubeedge/kubeedge/cloud/pkg/edgecontroller/constants"
 	commonconst "github.com/kubeedge/kubeedge/common/constants"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/metaserver/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 func (sctl *SyncController) reconcileObjectSync(sync *v1alpha1.ObjectSync) {

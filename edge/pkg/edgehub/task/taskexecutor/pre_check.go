@@ -26,8 +26,8 @@ import (
 	"github.com/shirou/gopsutil/v3/mem"
 
 	"github.com/kubeedge/kubeedge/common/types"
-	api "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
+	api "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
 )
 
 const (

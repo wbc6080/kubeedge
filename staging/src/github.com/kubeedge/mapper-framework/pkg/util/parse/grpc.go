@@ -3,9 +3,7 @@ package parse
 import (
 	"encoding/json"
 
-	"k8s.io/klog/v2"
-
-	dmiapi "github.com/kubeedge/kubeedge/pkg/apis/dmi/v1beta1"
+	dmiapi "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/dmi/v1beta1"
 	"github.com/kubeedge/mapper-framework/pkg/common"
 )
 

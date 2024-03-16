@@ -39,7 +39,7 @@ import (
 	"github.com/kubeedge/kubeedge/edge/pkg/common/dbm"
 	"github.com/kubeedge/kubeedge/edge/pkg/common/util"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
-	edgecoreCfg "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
+	edgecoreCfg "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 const (

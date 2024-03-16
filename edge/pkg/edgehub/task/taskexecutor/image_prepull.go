@@ -32,9 +32,9 @@ import (
 	edgeutil "github.com/kubeedge/kubeedge/edge/pkg/common/util"
 	metaclient "github.com/kubeedge/kubeedge/edge/pkg/metamanager/client"
 	"github.com/kubeedge/kubeedge/keadm/cmd/keadm/app/cmd/util"
-	api "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
-	"github.com/kubeedge/kubeedge/pkg/apis/operations/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
+	api "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/operations/v1alpha1"
 )
 
 const (

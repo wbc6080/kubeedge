@@ -59,8 +59,8 @@ import (
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager"
 	metaclient "github.com/kubeedge/kubeedge/edge/pkg/metamanager/client"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
 	"github.com/kubeedge/kubeedge/pkg/version"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 // GetKubeletDeps returns a Dependencies suitable for lite kubelet being run.

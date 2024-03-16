@@ -37,9 +37,9 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/constants"
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/manager"
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/types"
-	"github.com/kubeedge/kubeedge/pkg/apis/devices/v1beta1"
 	crdinformers "github.com/kubeedge/kubeedge/pkg/client/informers/externalversions"
 	"github.com/kubeedge/kubeedge/pkg/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/devices/v1beta1"
 )
 
 // DownstreamController watch kubernetes api server and send change to edge

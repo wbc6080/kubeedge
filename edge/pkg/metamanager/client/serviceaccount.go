@@ -14,7 +14,7 @@ import (
 	"github.com/kubeedge/kubeedge/edge/pkg/common/message"
 	"github.com/kubeedge/kubeedge/edge/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
-	policyv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/policy/v1alpha1"
+	policyv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/policy/v1alpha1"
 )
 
 // ServiceAccountTokenGetter is interface to get client service account token

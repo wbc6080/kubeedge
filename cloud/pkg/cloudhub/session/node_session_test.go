@@ -28,9 +28,9 @@ import (
 	beehivemodel "github.com/kubeedge/beehive/pkg/core/model"
 	"github.com/kubeedge/kubeedge/cloud/pkg/cloudhub/common"
 	tf "github.com/kubeedge/kubeedge/cloud/pkg/cloudhub/common/testing"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	reliableclient "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
 	"github.com/kubeedge/kubeedge/pkg/client/clientset/versioned/fake"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 	mockcon "github.com/kubeedge/viaduct/pkg/conn/testing"
 )
 

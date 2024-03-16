@@ -37,8 +37,8 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/cloudhub/common"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/messagelayer"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/client/clientset/versioned/fake"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 var (

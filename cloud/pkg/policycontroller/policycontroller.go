@@ -17,8 +17,8 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/messagelayer"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	pm "github.com/kubeedge/kubeedge/cloud/pkg/policycontroller/manager"
-	policyv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/policy/v1alpha1"
 	kefeatures "github.com/kubeedge/kubeedge/pkg/features"
+	policyv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/policy/v1alpha1"
 )
 
 // policyController use beehive context message layer

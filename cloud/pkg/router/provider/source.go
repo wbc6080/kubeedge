@@ -4,7 +4,7 @@ import (
 	"k8s.io/klog/v2"
 
 	"github.com/kubeedge/kubeedge/cloud/pkg/router/listener"
-	v1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
+	v1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 )
 
 type SourceFactory interface {

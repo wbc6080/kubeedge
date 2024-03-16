@@ -32,8 +32,8 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/constants"
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/types"
 	commonconst "github.com/kubeedge/kubeedge/common/constants"
-	"github.com/kubeedge/kubeedge/pkg/apis/devices/v1beta1"
 	crdClientset "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/devices/v1beta1"
 )
 
 // DeviceStatus is structure to patch device status

@@ -16,7 +16,7 @@ import (
 	"k8s.io/klog/v2"
 
 	"github.com/kubeedge/kubeedge/cloud/pkg/controllermanager/edgeapplication/overridemanager/imageparser"
-	appsv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/apps/v1alpha1"
+	appsv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/apps/v1alpha1"
 )
 
 type ImageOverrider struct{}

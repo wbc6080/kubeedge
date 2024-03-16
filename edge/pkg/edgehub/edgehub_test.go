@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/kubeedge/kubeedge/edge/pkg/edgehub/config"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 func TestGetCertSyncChannel(t *testing.T) {

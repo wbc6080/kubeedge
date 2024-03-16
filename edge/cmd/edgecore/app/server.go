@@ -27,13 +27,13 @@ import (
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager"
 	"github.com/kubeedge/kubeedge/edge/pkg/servicebus"
 	"github.com/kubeedge/kubeedge/edge/test"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2/validation"
 	"github.com/kubeedge/kubeedge/pkg/features"
 	"github.com/kubeedge/kubeedge/pkg/util"
 	"github.com/kubeedge/kubeedge/pkg/util/flag"
 	utilvalidation "github.com/kubeedge/kubeedge/pkg/util/validation"
 	"github.com/kubeedge/kubeedge/pkg/version"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2/validation"
 )
 
 // NewEdgeCoreCommand create edgecore cmd

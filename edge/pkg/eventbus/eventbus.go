@@ -16,7 +16,7 @@ import (
 	eventconfig "github.com/kubeedge/kubeedge/edge/pkg/eventbus/config"
 	"github.com/kubeedge/kubeedge/edge/pkg/eventbus/dao"
 	mqttBus "github.com/kubeedge/kubeedge/edge/pkg/eventbus/mqtt"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 var mqttServer *mqttBus.Server

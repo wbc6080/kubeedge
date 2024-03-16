@@ -28,7 +28,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/edgecontroller/constants"
 	commonconstants "github.com/kubeedge/kubeedge/common/constants"
-	policyv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/policy/v1alpha1"
+	policyv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/policy/v1alpha1"
 )
 
 type Controller struct {

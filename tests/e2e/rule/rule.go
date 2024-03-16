@@ -9,8 +9,8 @@ import (
 	"github.com/onsi/gomega"
 	"k8s.io/kubernetes/test/e2e/framework"
 
-	v1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
 	edgeclientset "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
+	v1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 	"github.com/kubeedge/kubeedge/tests/e2e/utils"
 )
 

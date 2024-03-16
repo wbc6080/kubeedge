@@ -31,10 +31,10 @@ import (
 	tf "github.com/kubeedge/kubeedge/cloud/pkg/cloudhub/common/testing"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/synccontroller/config"
-	configv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	crdfake "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned/fake"
 	crdinformers "github.com/kubeedge/kubeedge/pkg/client/informers/externalversions"
+	configv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 func TestNewSyncControllerAndStartIt(t *testing.T) {

@@ -11,7 +11,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/router/listener"
 	"github.com/kubeedge/kubeedge/cloud/pkg/router/provider"
-	routerv1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
+	routerv1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 )
 
 var (

@@ -24,8 +24,8 @@ import (
 	cliflag "k8s.io/component-base/cli/flag"
 
 	"github.com/kubeedge/kubeedge/common/constants"
-	config "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/util/validation"
+	config "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 type CloudCoreOptions struct {

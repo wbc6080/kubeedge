@@ -25,10 +25,10 @@ import (
 
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/client"
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util"
-	fsmapi "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
-	v1alpha12 "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
-	"github.com/kubeedge/kubeedge/pkg/apis/operations/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
+	fsmapi "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
+	v1alpha12 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/operations/v1alpha1"
 )
 
 func currentPrePullNodeState(id, nodeName string) (v1alpha12.State, error) {

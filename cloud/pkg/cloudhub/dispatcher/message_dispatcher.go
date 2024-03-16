@@ -37,11 +37,11 @@ import (
 	taskutil "github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util"
 	commonconst "github.com/kubeedge/kubeedge/common/constants"
 	v2 "github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao/v2"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	reliableclient "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
 	synclisters "github.com/kubeedge/kubeedge/pkg/client/listers/reliablesyncs/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/metaserver"
 	"github.com/kubeedge/kubeedge/pkg/metaserver/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 // There are two `AcknowledgeMode` for message that send to edge node

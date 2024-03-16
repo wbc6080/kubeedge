@@ -30,7 +30,7 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/dynamiccontroller/config"
 	"github.com/kubeedge/kubeedge/cloud/pkg/dynamiccontroller/filter/defaultmaster"
 	"github.com/kubeedge/kubeedge/cloud/pkg/dynamiccontroller/filter/endpointresource"
-	configv1alpha1 "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
+	configv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 // DynamicController use dynamicSharedInformer to dispatch messages

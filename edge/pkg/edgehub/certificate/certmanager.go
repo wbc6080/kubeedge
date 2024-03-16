@@ -26,7 +26,7 @@ import (
 	"github.com/kubeedge/kubeedge/common/constants"
 	"github.com/kubeedge/kubeedge/edge/pkg/edgehub/common/certutil"
 	"github.com/kubeedge/kubeedge/edge/pkg/edgehub/common/http"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/edgecore/v1alpha2"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 // jitteryDuration uses some jitter to set the rotation threshold so each node

@@ -28,7 +28,7 @@ import (
 	"k8s.io/klog/v2"
 
 	beehivecontext "github.com/kubeedge/beehive/pkg/core/context"
-	config "github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
+	config "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 const (

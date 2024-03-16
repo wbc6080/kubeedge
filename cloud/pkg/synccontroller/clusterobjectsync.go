@@ -17,8 +17,8 @@ import (
 	"github.com/kubeedge/beehive/pkg/core/model"
 	commonconst "github.com/kubeedge/kubeedge/common/constants"
 	v2 "github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao/v2"
-	"github.com/kubeedge/kubeedge/pkg/apis/reliablesyncs/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/metaserver/util"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 func (sctl *SyncController) reconcileClusterObjectSync(sync *v1alpha1.ClusterObjectSync) {

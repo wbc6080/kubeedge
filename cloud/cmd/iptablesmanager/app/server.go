@@ -32,9 +32,9 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/cmd/iptablesmanager/app/options"
 	"github.com/kubeedge/kubeedge/cloud/pkg/cloudstream/iptables"
 	"github.com/kubeedge/kubeedge/common/constants"
-	"github.com/kubeedge/kubeedge/pkg/apis/componentconfig/cloudcore/v1alpha1"
 	"github.com/kubeedge/kubeedge/pkg/util/flag"
 	"github.com/kubeedge/kubeedge/pkg/version/verflag"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 func NewIptablesManagerCommand() *cobra.Command {

@@ -9,8 +9,8 @@ import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	rulesv1 "github.com/kubeedge/kubeedge/pkg/apis/rules/v1"
 	edgeclientset "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
+	rulesv1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/rules/v1"
 )
 
 func NewRule(sourceType, targetType rulesv1.RuleEndpointTypeDef) *rulesv1.Rule {

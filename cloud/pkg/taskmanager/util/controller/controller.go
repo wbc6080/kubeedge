@@ -27,10 +27,10 @@ import (
 
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util"
 	"github.com/kubeedge/kubeedge/cloud/pkg/taskmanager/util/manager"
-	api "github.com/kubeedge/kubeedge/pkg/apis/fsm/v1alpha1"
-	"github.com/kubeedge/kubeedge/pkg/apis/operations/v1alpha1"
 	crdClientset "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
+	api "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
+	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/operations/v1alpha1"
 )
 
 type Controller interface {
