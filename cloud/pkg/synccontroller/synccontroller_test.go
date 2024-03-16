@@ -27,14 +27,14 @@ import (
 	"k8s.io/client-go/informers"
 	"k8s.io/client-go/kubernetes/fake"
 
+	configv1alpha1 "github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
+	"github.com/kubeedge/api/reliablesyncs/v1alpha1"
 	beehiveContext "github.com/kubeedge/beehive/pkg/core/context"
 	tf "github.com/kubeedge/kubeedge/cloud/pkg/cloudhub/common/testing"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/modules"
 	"github.com/kubeedge/kubeedge/cloud/pkg/synccontroller/config"
 	crdfake "github.com/kubeedge/kubeedge/pkg/client/clientset/versioned/fake"
 	crdinformers "github.com/kubeedge/kubeedge/pkg/client/informers/externalversions"
-	configv1alpha1 "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/reliablesyncs/v1alpha1"
 )
 
 func TestNewSyncControllerAndStartIt(t *testing.T) {

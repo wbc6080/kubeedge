@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/kubeedge/Template/driver"
-	dmiapi "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/dmi/v1beta1"
+	dmiapi "github.com/kubeedge/api/dmi/v1beta1"
 	"github.com/kubeedge/mapper-framework/pkg/common"
 	"github.com/kubeedge/mapper-framework/pkg/grpcclient"
 	"github.com/kubeedge/mapper-framework/pkg/util/parse"

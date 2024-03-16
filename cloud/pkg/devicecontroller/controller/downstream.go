@@ -29,6 +29,7 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/klog/v2"
 
+	"github.com/kubeedge/api/devices/v1beta1"
 	beehiveContext "github.com/kubeedge/beehive/pkg/core/context"
 	"github.com/kubeedge/beehive/pkg/core/model"
 	"github.com/kubeedge/kubeedge/cloud/pkg/common/client"
@@ -39,7 +40,6 @@ import (
 	"github.com/kubeedge/kubeedge/cloud/pkg/devicecontroller/types"
 	crdinformers "github.com/kubeedge/kubeedge/pkg/client/informers/externalversions"
 	"github.com/kubeedge/kubeedge/pkg/util"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/devices/v1beta1"
 )
 
 // DownstreamController watch kubernetes api server and send change to edge

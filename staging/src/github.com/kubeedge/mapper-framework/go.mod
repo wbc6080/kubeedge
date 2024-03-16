@@ -3,10 +3,9 @@ module github.com/kubeedge/mapper-framework
 go 1.20
 
 require (
-	github.com/avast/retry-go v3.0.0+incompatible
 	github.com/golang/protobuf v1.5.3
 	github.com/gorilla/mux v1.8.0
-	github.com/kubeedge/kubeedge v0.0.0
+	github.com/kubeedge/api v0.0.0
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace
 	golang.org/x/net v0.17.0 // indirect
 	google.golang.org/grpc v1.53.0
@@ -17,11 +16,21 @@ require (
 
 require (
 	github.com/go-logr/logr v1.2.4 // indirect
-	github.com/kr/pretty v0.1.0 // indirect
+	github.com/kr/text v0.2.0 // indirect
+	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 )
 
-replace github.com/kubeedge/kubeedge => ../../../../../
+replace (
+	github.com/kubeedge/api => ../api
+	github.com/kubeedge/beehive v0.0.0 => github.com/kubeedge/beehive v1.13.0
+	github.com/kubeedge/viaduct v0.0.0 => github.com/kubeedge/viaduct v1.13.0
+	k8s.io/component-helpers => github.com/kubeedge/kubernetes/staging/src/k8s.io/component-helpers v1.26.10-kubeedge1
+	k8s.io/controller-manager => github.com/kubeedge/kubernetes/staging/src/k8s.io/controller-manager v1.27.7-kubeedge1
+	k8s.io/dynamic-resource-allocation => github.com/kubeedge/kubernetes/staging/src/k8s.io/dynamic-resource-allocation v1.26.10-kubeedge1
+	k8s.io/legacy-cloud-providers => github.com/kubeedge/kubernetes/staging/src/k8s.io/legacy-cloud-providers v1.26.10-kubeedge1
+	k8s.io/pod-security-admission => k8s.io/pod-security-admission v0.26.10
+)

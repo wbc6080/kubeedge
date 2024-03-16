@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
 	cliflag "k8s.io/component-base/cli/flag"
 
+	config "github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 	"github.com/kubeedge/kubeedge/common/constants"
 	"github.com/kubeedge/kubeedge/pkg/util/validation"
-	config "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 type CloudCoreOptions struct {

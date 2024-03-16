@@ -25,9 +25,9 @@ import (
 	"github.com/shirou/gopsutil/disk"
 	"github.com/shirou/gopsutil/v3/mem"
 
+	api "github.com/kubeedge/api/fsm/v1alpha1"
 	"github.com/kubeedge/kubeedge/common/types"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
-	api "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
 )
 
 const (

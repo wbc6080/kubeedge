@@ -21,9 +21,9 @@ import (
 
 	"k8s.io/klog/v2"
 
+	"github.com/kubeedge/api/fsm/v1alpha1"
 	"github.com/kubeedge/kubeedge/common/types"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/fsm/v1alpha1"
 )
 
 func init() {

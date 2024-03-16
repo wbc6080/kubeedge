@@ -48,6 +48,7 @@ import (
 	kubelettypes "k8s.io/kubernetes/pkg/kubelet/types"
 	csiplugin "k8s.io/kubernetes/pkg/volume/csi"
 
+	"github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 	"github.com/kubeedge/beehive/pkg/core"
 	beehiveContext "github.com/kubeedge/beehive/pkg/core/context"
 	"github.com/kubeedge/beehive/pkg/core/model"
@@ -60,7 +61,6 @@ import (
 	metaclient "github.com/kubeedge/kubeedge/edge/pkg/metamanager/client"
 	"github.com/kubeedge/kubeedge/edge/pkg/metamanager/dao"
 	"github.com/kubeedge/kubeedge/pkg/version"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 // GetKubeletDeps returns a Dependencies suitable for lite kubelet being run.

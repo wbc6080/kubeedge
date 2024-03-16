@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"time"
 
-	dmiapi "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/dmi/v1beta1"
+	dmiapi "github.com/kubeedge/api/dmi/v1beta1"
 	"github.com/kubeedge/mapper-framework/pkg/common"
 	"github.com/kubeedge/mapper-framework/pkg/util/parse"
 )

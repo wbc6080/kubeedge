@@ -44,13 +44,12 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/klog/v2"
 
+	"github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 	"github.com/kubeedge/kubeedge/common/constants"
 	commontypes "github.com/kubeedge/kubeedge/common/types"
 	types "github.com/kubeedge/kubeedge/keadm/cmd/keadm/app/cmd/common"
 	"github.com/kubeedge/kubeedge/pkg/util/fsm"
 	pkgversion "github.com/kubeedge/kubeedge/pkg/version"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 )
 
 var (

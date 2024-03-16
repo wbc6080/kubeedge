@@ -6,11 +6,11 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 
+	edgeconfig "github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 	"github.com/kubeedge/kubeedge/edge/test/integration/utils"
 	"github.com/kubeedge/kubeedge/edge/test/integration/utils/common"
 	"github.com/kubeedge/kubeedge/edge/test/integration/utils/edge"
 	kefeatures "github.com/kubeedge/kubeedge/pkg/features"
-	edgeconfig "github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/edgecore/v1alpha2"
 	"github.com/kubeedge/kubeedge/tests/integration/framework"
 )
 

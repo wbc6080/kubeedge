@@ -14,8 +14,8 @@ import (
 	// init servicebus
 	_ "github.com/kubeedge/kubeedge/cloud/pkg/router/provider/servicebus"
 	// init rule
+	"github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 	_ "github.com/kubeedge/kubeedge/cloud/pkg/router/rule"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
 )
 
 type router struct {

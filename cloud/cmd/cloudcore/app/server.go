@@ -34,6 +34,8 @@ import (
 	"k8s.io/klog/v2"
 	"sigs.k8s.io/yaml"
 
+	"github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
+	"github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1/validation"
 	"github.com/kubeedge/beehive/pkg/core"
 	beehiveContext "github.com/kubeedge/beehive/pkg/core/context"
 	"github.com/kubeedge/kubeedge/cloud/cmd/cloudcore/app/options"
@@ -57,8 +59,6 @@ import (
 	"github.com/kubeedge/kubeedge/pkg/util"
 	"github.com/kubeedge/kubeedge/pkg/util/flag"
 	"github.com/kubeedge/kubeedge/pkg/version"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1"
-	"github.com/kubeedge/kubeedge/staging/src/github.com/kubeedge/api/componentconfig/cloudcore/v1alpha1/validation"
 )
 
 func NewCloudCoreCommand() *cobra.Command {
