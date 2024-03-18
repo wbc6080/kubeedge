@@ -19,7 +19,7 @@ import (
 	httpMethod "github.com/kubeedge/Template/data/publish/http"
 	mqttMethod "github.com/kubeedge/Template/data/publish/mqtt"
 	"github.com/kubeedge/Template/driver"
-	dmiapi "github.com/kubeedge/kubeedge/pkg/apis/dmi/v1beta1"
+	dmiapi "github.com/kubeedge/api/dmi/v1beta1"
 	"github.com/kubeedge/mapper-framework/pkg/common"
 	"github.com/kubeedge/mapper-framework/pkg/global"
 	"github.com/kubeedge/mapper-framework/pkg/util/parse"

@@ -18,6 +18,7 @@ require (
 	github.com/golang/protobuf v1.5.3
 	github.com/google/uuid v1.3.0
 	github.com/gorilla/websocket v1.4.2
+	github.com/kubeedge/api v0.0.0
 	github.com/kubeedge/beehive v0.0.0
 	github.com/kubeedge/viaduct v0.0.0
 	github.com/kubernetes-csi/csi-lib-utils v0.6.1
@@ -44,7 +45,7 @@ require (
 	k8s.io/cri-api v0.27.7
 	k8s.io/klog/v2 v2.100.1
 	k8s.io/kube-openapi v0.0.0-20230501164219-8b0f38b5fd1f
-	k8s.io/kubelet v0.27.7
+	k8s.io/kubelet v0.27.7 // indirect
 	k8s.io/kubernetes v1.27.7
 	k8s.io/mount-utils v0.27.7
 	k8s.io/utils v0.0.0-20230220204549-a5ecb0141aa5
@@ -283,6 +284,7 @@ replace (
 	github.com/containerd/containerd => github.com/containerd/containerd v1.5.18
 	github.com/emicklei/go-restful/v3 => github.com/emicklei/go-restful/v3 v3.7.5-0.20220308211933-7c971ca4d0fd
 	github.com/gopherjs/gopherjs v0.0.0 => github.com/gopherjs/gopherjs v0.0.0-20181103185306-d547d1d9531e // indirect
+	github.com/kubeedge/api => ./staging/src/github.com/kubeedge/api
 	github.com/kubeedge/beehive => ./staging/src/github.com/kubeedge/beehive
 	github.com/kubeedge/viaduct => ./staging/src/github.com/kubeedge/viaduct
 	github.com/spf13/viper => github.com/spf13/viper v1.8.1

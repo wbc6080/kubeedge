@@ -27,6 +27,7 @@ SERVICEACCOUNTACCESS_VERSION=v1alpha1
 APPS_VERSION=v1alpha1
 HELM_CRDS_DIR=manifests/charts/cloudcore/crds
 ROUTER_DIR=build/crds/router
+CRD_DIR=staging/src/github.com/kubeedge/api
 
 _crdOptions="crd:crdVersions=${CRD_VERSIONS},generateEmbeddedObjectMeta=true,allowDangerousTypes=true"
 _tmpdir=/tmp/crds
@@ -70,7 +71,9 @@ function :pre:install: {
 
 function :gen:crds: {
   # generate crds
+  cd ${CRD_DIR}
   $(which controller-gen) paths="./..." ${_crdOptions} output:crd:artifacts:config=${_tmpdir}
+  cd -
 }
 
 # remove the last element if it ends with "s", i.e: devicemodels -> devicemodel
