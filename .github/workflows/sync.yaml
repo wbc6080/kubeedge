@@ -1,6 +1,9 @@
 name: Sync CI WorkFlow
 
 on:
+  push:
+    branches:
+      - master
   pull_request_target:
     types:
       - closed
@@ -16,7 +19,7 @@ jobs:
         with:
           detached: true
       - run: |
-          echo ${{ env.GIT_USER }}
-          echo ${{ env.GIT_TOKEN }}
+          echo ${{ github.GIT_USER }}
+          echo ${{ github.GIT_TOKEN }}
           git log
           git rev-parse -q --verify HEAD
