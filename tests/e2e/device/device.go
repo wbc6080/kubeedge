@@ -17,11 +17,16 @@ limitations under the License.
 package device
 
 import (
+	"fmt"
 	"net/http"
 	"time"
 
 	"github.com/onsi/ginkgo/v2"
 	"github.com/onsi/gomega"
+	"k8s.io/api/core/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/apimachinery/pkg/labels"
+	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/kubernetes/test/e2e/framework"
 
 	edgeclientset "github.com/kubeedge/api/client/clientset/versioned"
@@ -38,9 +43,50 @@ var _ = GroupDescribe("Device Management test in E2E scenario", func() {
 	var testTimer *utils.TestTimer
 	var testSpecReport ginkgo.SpecReport
 	var edgeClientSet edgeclientset.Interface
+	var clientSet clientset.Interface
 
 	ginkgo.BeforeEach(func() {
 		edgeClientSet = utils.NewKubeEdgeClient(framework.TestContext.KubeConfig)
+		clientSet = utils.NewKubeClient(framework.TestContext.KubeConfig)
+	})
+
+	// Test whether mapper can be created and deleted normally by mapper-framework.
+	// The method is to generate a mapper project based on mapper-framework and check whether the mapper project can be compiled normally to form an image.
+	ginkgo.Context("Test Mapper Creation and Deletion", func() {
+		ginkgo.BeforeEach(func() {
+			// Get current test SpecReport
+			testSpecReport = ginkgo.CurrentSpecReport()
+			// Start test timer
+			testTimer = utils.CRDTestTimerGroup.NewTestTimer(testSpecReport.LeafNodeText)
+		})
+		ginkgo.AfterEach(func() {
+			// End test timer
+			testTimer.End()
+			// Print result
+			testTimer.PrintResult()
+			// Delete the deployment in test
+			ginkgo.By(fmt.Sprintf("get deployment %s", constants.MapperName))
+			deployment, err := utils.GetDeployment(clientSet, v1.NamespaceDefault, constants.MapperName)
+			gomega.Expect(err).To(gomega.BeNil())
+
+			ginkgo.By(fmt.Sprintf("list pod for deploy %s", constants.MapperName))
+			labelSelector := labels.SelectorFromSet(map[string]string{"app": constants.MapperName})
+			_, err = utils.GetPods(clientSet, metav1.NamespaceDefault, labelSelector, nil)
+			gomega.Expect(err).To(gomega.BeNil())
+
+			ginkgo.By(fmt.Sprintf("delete deploy %s", constants.MapperName))
+			err = utils.DeleteDeployment(clientSet, deployment.Namespace, deployment.Name)
+			gomega.Expect(err).To(gomega.BeNil())
+
+			ginkgo.By(fmt.Sprintf("wait for pod of deploy %s to disappear", constants.MapperName))
+			err = utils.WaitForPodsToDisappear(clientSet, metav1.NamespaceDefault, labelSelector, constants.Interval, constants.Timeout)
+			gomega.Expect(err).To(gomega.BeNil())
+			utils.PrintTestcaseNameandStatus()
+		})
+		framework.ConformanceIt("E2E_CREATE_MAPPER_1: Create mapper for modbus protocol", func() {
+			replica := int32(1)
+			utils.CreateMapperDeployment(clientSet, replica, constants.MapperName)
+		})
 	})
 
 	ginkgo.Context("Test Device Model Creation, Updation and Deletion", func() {
